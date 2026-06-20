@@ -1,3 +1,4 @@
+
 *{
   margin:0;
   padding:0;
@@ -98,4 +99,18 @@ h2{
 
 .project-card{
   margin-bottom:20px;
+}
+.stats{
+ display:flex;
+ justify-content:center;
+ gap:30px;
+ flex-wrap:wrap;
+}
+
+.stat-box{
+ background:#1e293b;
+ padding:25px;
+ border-radius:15px;
+ text-align:center;
+ width:180px;
 }

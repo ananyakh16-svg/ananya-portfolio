@@ -1,6 +1,7 @@
 function App() {
   return (
     <>
+    
       <section className="hero">
         <div className="hero-content">
           <h1>Ananya KH</h1>
@@ -32,6 +33,22 @@ As a lifelong learner, I actively participate in online certification programs a
           </p>
         </div>
       </section>
+      <section className="stats">
+  <div className="stat-box">
+    <h2>8+</h2>
+    <p>Certifications</p>
+  </div>
+
+  <div className="stat-box">
+    <h2>1</h2>
+    <p>Projects</p>
+  </div>
+
+  <div className="stat-box">
+    <h2>10+</h2>
+    <p>Technologies</p>
+  </div>
+</section>
 
       <section id="skills">
         <h2>Skills</h2>
@@ -60,10 +77,19 @@ As a lifelong learner, I actively participate in online certification programs a
         <h2>Projects</h2>
 
         <div className="project-card">
-          <h3>Club management system</h3>
-          <p>
-            developed a full stack clun management system using react and Django to streamline club operations and improve member engagement.
-          </p>
+          <div className="project-card">
+  <h3>Club Management System</h3>
+
+  <p><strong>React • Django • MySQL</strong></p>
+
+  <p>
+    Designed and developed a full-stack web application to streamline club
+    management processes and enhance member engagement. The platform supports
+    member registration, event management, activity tracking, and centralized
+    communication, improving efficiency for both club administrators and
+    participants.
+  </p>
+</div>
         </div>
       </section>
 
@@ -83,12 +109,15 @@ As a lifelong learner, I actively participate in online certification programs a
 
       <section id="contact">
         <h2>Contact</h2>
+        <div className="buttons">
+  <a href="https://github.com/ananyakh16-svg">
+    GitHub
+  </a>
 
-        <div className="card">
-          <p>Email: ananyakh16@gmail.com</p>
-          <p>LinkedIn: https://www.linkedin.com/in/ananya-kh-30004a373/</p>
-          <p>GitHub:https://github.com/ananyakh16-svg</p>
-        </div>
+  <a href="https://linkedin.com/in/ananya-kh-30004a373/">
+    LinkedIn
+  </a>
+</div>
       </section>
     </>
   );
