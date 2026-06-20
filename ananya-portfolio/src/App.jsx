@@ -1,73 +1,97 @@
 function App() {
-
   return (
     <>
-    
       <section className="hero">
-        <h1>Ananya KH</h1>
-        <p>B.Sc Data Science Student</p>
-        <p>AI • Data Science • Web Development</p>
-      </section>
+        <div className="hero-content">
+          <h1>Ananya KH</h1>
+          <h2>B.Sc Data Science Student</h2>
+          <p>
+            Data Science Student • AI Explorer • Full Stack Developer • Problem Solver
+          </p>
 
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I am a B.Sc Data Science student at St. Thomas College Thrissur.
-          Passionate about AI, Data Science and building impactful
-          technology solutions.
-        </p>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
-
-        <div className="skills">
-          <span>Python</span>
-          <span>C</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Django</span>
-          <span>Flutter</span>
-          <span>MySQL</span>
-          <span>MongoDB</span>
+          <div className="buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact">Contact Me</a>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
+      <section id="about">
+        <h2>About Me</h2>
 
         <div className="card">
-          <h3>Club management system</h3>
-          <p>Developed a full stack club management system using React and Django to streamline club operations and improve member engagement.</p>
+          <p>
+            Hello! I'm Ananya KH, a B.Sc. Data Science student at St. Thomas College, Thrissur (2025–2029). I am passionate about Data Science, Artificial Intelligence, Web Development, and building technology-driven solutions that create a positive impact on society.
+
+Over time, I have developed skills in Python, C Programming, HTML, CSS, JavaScript, React, Django, Flutter, MySQL, and MongoDB. I enjoy exploring new technologies, solving real-world problems, and continuously improving my technical and analytical abilities.
+
+My interests include AI-powered applications, data-driven decision making, full-stack development, and assistive technologies. I am particularly motivated to build projects that address real-life challenges and improve accessibility, learning, and quality of life for different communities.
+
+As a lifelong learner, I actively participate in online certification programs and hands-on projects to strengthen my knowledge and prepare for a successful career in Data Science and Software Development.
+
+          </p>
         </div>
       </section>
 
-      <section>
+      <section id="skills">
+        <h2>Skills</h2>
+
+        <div className="skills-grid">
+          {[
+            "Python",
+            "C Programming",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Django",
+            "Flutter",
+            "MongoDB",
+            "MySQL",
+          ].map((skill) => (
+            <div className="skill-card" key={skill}>
+              {skill}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div className="project-card">
+          <h3>Club management system</h3>
+          <p>
+            developed a full stack clun management system using react and Django to streamline club operations and improve member engagement.
+          </p>
+        </div>
+      </section>
+
+      <section id="certificates">
         <h2>Certificates</h2>
 
-        <ul>
-          <li>Python 101 For Data Science</li>
-          <li>Sql And Relational Databases 101</li>
-          <li>Introduction To Open Source</li>
-          <li>Data Science Tools</li>
-          <li>Data Privacy Fundamentals</li>
-          <li>Data Science Methodology</li>
-          <li>Data Science 101</li>        </ul>
+        <div className="cert-grid">
+          <div className="cert-card">python 101 for datascience</div>
+          <div className="cert-card">sql and relational databases 101</div>
+          <div className="cert-card">introduction to open source</div>
+          <div className="cert-card">datascience tools</div>
+          <div className="cert-card">data privacy fundamentals</div>
+          <div className="cert-card">data science methodology</div>
+          <div className="cert-card">data science 101</div>
+        </div>
       </section>
 
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
 
-        <p>Email: ananyakh16@gmail.com</p>
-        <p>LinkedIn:https://www.linkedin.com/in/ananya-kh-30004a373/ </p>
-        <p>GitHub: https://github.com/ananyakh16-svg/New-coding-</p>
+        <div className="card">
+          <p>Email: ananyakh16@gmail.com</p>
+          <p>LinkedIn: https://www.linkedin.com/in/ananya-kh-30004a373/</p>
+          <p>GitHub:https://github.com/ananyakh16-svg</p>
+        </div>
       </section>
-
     </>
-      
   );
 }
 
-export default App
+export default App;
